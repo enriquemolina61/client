@@ -7,7 +7,7 @@ export const bicycles = [
     price: 25000,
     carrinho: false,
     sold: false,
-    image: require("assets/images/1-Pinarello.jpg"),
+    image: require("../assets/images/1-Pinarello.jpg"),
   },
   {
     color: "White",
@@ -17,7 +17,7 @@ export const bicycles = [
     price: 15000,
     carrinho: false,
     sold: false,
-    image: require("assets/images/2-Eddy-Merckx.jpg"),
+    image: require("../assets/images/2-Eddy-Merckx.jpg"),
   },
   {
     color: "Black",
@@ -27,7 +27,7 @@ export const bicycles = [
     price: 1500,
     carrinho: false,
     sold: false,
-    image: require("assets/images/3-BMC.jpg"),
+    image: require("../assets/images/3-BMC.jpg"),
   },
   {
     color: "Orange",
@@ -37,7 +37,7 @@ export const bicycles = [
     price: 7000,
     carrinho: false,
     sold: false,
-    image: require("assets/images/4-Trek.jpg"),
+    image: require("../assets/images/4-Trek.jpg"),
   },
   {
     color: "Black",
@@ -47,7 +47,7 @@ export const bicycles = [
     price: 4500,
     carrinho: false,
     sold: false,
-    image: require("assets/images/5-Specialized.jpg"),
+    image: require("../assets/images/5-Specialized.jpg"),
   },
   {
     color: "Green",
@@ -57,7 +57,7 @@ export const bicycles = [
     price: 12500,
     carrinho: false,
     sold: false,
-    image: require("assets/images/6-Giant.jpg"),
+    image: require("../assets/images/6-Giant.jpg"),
   },
   {
     color: "Red",
@@ -67,6 +67,6 @@ export const bicycles = [
     price: 5000,
     carrinho: false,
     sold: false,
-    image: require("assets/images/7-Raleigh.jpg"),
+    image: require("../assets/images/7-Raleigh.jpg"),
   },
 ];

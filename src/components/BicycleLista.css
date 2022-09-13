@@ -1,0 +1,94 @@
+.BicycleLista{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 50px;
+  }
+  
+  @media (max-width: 1220px) {
+    .BicycleLista {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 840px) {
+    .BicycleLista {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .BicycleListaItem {
+    border-style: double;
+    font-family: "Exo";
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    width: 315px;
+    display: flex;
+    justify-content: space-around;
+    border-color: black;
+    
+  }
+  
+  @media (max-width: 400px) {
+    .BicycleListaItem {
+      width: 210px;
+      height: 180px;
+    }
+  }
+  
+  .BicycleListaItem > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .BicycleListaItemBrand {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  
+  .BicycleListaItemGears{
+    font-size: 0.85em;
+  }
+  
+  .BicycleListaItemPrice{
+    color: rgb(63, 62, 63);
+  }
+  
+  .Acoes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Acoes_adicionar,
+  .Acoes__remover {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: "Exo", sans-serif;
+    padding: 5px;
+    max-width: 280px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .Acoes__remover {
+    background-color: red;
+  }
+  
+  .Acoes_adicionar {
+    background-color: rgb(107, 94, 112);
+  }
+  
+  .Acoes_preencher {
+    width: 100%;
+  }
+  
+  .BicycleListaItemImage {
+    height: 150px;
+    margin-right: -60px;
+  }
