@@ -4,13 +4,13 @@ import './BicycleLista.css';
 export function BicycleLista(){
     return <div className='BicycleLista'>
         {bicycles.map((bicycle, index) => (
-                <div className="BicycleListaItem">
+                <div className="BicycleListaItem" key={`BicycleLista-${index}`}>
                     <div>
                     <div className='BicycleListaItemBrand'>{bicycle.brand}</div>
                         <div className='BicycleListaItemColor'>{bicycle.color}</div>
                         <div className='BicycleListaItemGears'>{bicycle.gears}</div>
                         <div className='BicycleListaItemModel'>{bicycle.model}</div>
-                        <div className='BicycleListaItemPrice'>{bicycle.price}</div>
+                        <div className='BicycleListaItemPrice'>{`R$ ${bicycle.price}`}</div>
                         <div>
                          <img className='BicycleListaItemImage' src={bicycle.image} alt={`Bicicleta da marca ${bicycle.brand} com o valor de ${bicycle.price} reais, do modelo ${bicycle.model}. `}/>
                         </div>
