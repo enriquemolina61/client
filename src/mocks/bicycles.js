@@ -37,7 +37,7 @@ export const bicycles = [
     price: 7000,
     carrinho: false,
     sold: false,
-    image: require("../assets/images/4-Trek.jpg"),
+    image: require("../assets/images/4-Trek.png"),
   },
   {
     color: "Black",
