@@ -91,7 +91,7 @@
   
   .BicycleListaItemImage {
     height: 150px;
-    margin-right: -60px;
+    margin-right: 60px;
   }
 
   .BicycleListaItem__badge {
