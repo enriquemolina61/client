@@ -5,6 +5,9 @@ import "./BicycleLista.css";
 export function BicycleLista() {
   const [bicycleSelecionada, setBicycleSelecionada] = useState({});
 
+const badgeCounter = (canRender, index) =>
+	Boolean(canRender) && (<span className="BicycleListaItem__badge"> {bicycleSelecionada[index]} </span>);
+
   const adicionarItem = (bicycleIndex) => {
     const bicycle = {
       [bicycleIndex]: Number(bicycleSelecionada[bicycleIndex] || 0) + 1,
@@ -15,7 +18,7 @@ export function BicycleLista() {
     <div className="BicycleLista">
       {bicycles.map((bicycle, index) => (
         <div className="BicycleListaItem" key={`BicycleLista-${index}`}>
-          <span className="BicycleListaItem__badge">{bicycleSelecionada[index] || 0}</span>
+          {badgeCounter(bicycleSelecionada[index], index)}
           <div>
             <div className="BicycleListaItemBrand">{bicycle.brand}</div>
             <div className="BicycleListaItemColor">{bicycle.color}</div>
