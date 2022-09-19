@@ -1,7 +1,7 @@
-import { BicycleLista } from "./BicycleLista";
+import { BicycleLista } from "components/BicycleLista/BicycleLista";
 import "./Home.css";
-import carrinho from "../assets/icons/carrinho.png";
-import logo from "../assets/logo.png";
+import carrinho from "assets/icons/carrinho.png";
+import logo from "assets/logo.png";
 
 export function Home() {
   return (
