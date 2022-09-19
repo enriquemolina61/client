@@ -12,8 +12,20 @@ const badgeCounter = (canRender, index) =>
     const bicycle = {
       [bicycleIndex]: Number(bicycleSelecionada[bicycleIndex] || 0) + 1,
     };
+    
     setBicycleSelecionada({ ...bicycleSelecionada, ...bicycle });
   };
+  const removerItem = (bicycleIndex) => {
+    const bicycle = {
+      [bicycleIndex]: Number(bicycleSelecionada[bicycleIndex] || 0) - 1,
+    };
+    
+    setBicycleSelecionada({ ...bicycleSelecionada, ...bicycle });
+  };
+
+  const removeButton = (canRender, index) =>
+	Boolean(canRender) && (<button className="Acoes_remover" onClick={()=> removerItem(index)}>Remover</button>);
+
   return (
     <div className="BicycleLista">
       {bicycles.map((bicycle, index) => (
@@ -34,11 +46,12 @@ const badgeCounter = (canRender, index) =>
             </div>
             <div className="BicycleListaItemAcoes Acoes">
               <button
-                className="Acoes_adicionar Acoes_preencher"
+                className={`Acoes_adicionar ${!bicycleSelecionada[index] && "Acoes_preencher"}`}
                 onClick={() => adicionarItem(index)}
               >
                 Adicionar ao carrinho
               </button>
+              {removeButton(bicycleSelecionada[index], index)}
             </div>
           </div>
         </div>

@@ -63,7 +63,7 @@
   }
   
   .Acoes_adicionar,
-  .Acoes__remover {
+  .Acoes_remover {
     border: none;
     color: white;
     border-radius: 5px;
@@ -77,7 +77,7 @@
     width: 48%;
   }
   
-  .Acoes__remover {
+  .Acoes_remover {
     background-color: red;
   }
   
