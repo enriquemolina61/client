@@ -1,60 +1,21 @@
-import React, { useState } from "react";
-import { bicycles } from "mocks/bicycles";
-import "./BicycleLista.css";
+import React, { useState } from 'react';
+import { bicycles } from '../../mocks/bicycles';
+import './BicycleLista.css';
+import BicycleListaItem from 'components/BicycleListaItem/BicycleListaItem';
 
 export function BicycleLista() {
   const [bicycleSelecionada, setBicycleSelecionada] = useState({});
 
-const badgeCounter = (canRender, index) =>
-	Boolean(canRender) && (<span className="BicycleListaItem__badge"> {bicycleSelecionada[index]} </span>);
-
-  const adicionarItem = (bicycleIndex) => {
-    const bicycle = {
-      [bicycleIndex]: Number(bicycleSelecionada[bicycleIndex] || 0) + 1,
-    };
-    
-    setBicycleSelecionada({ ...bicycleSelecionada, ...bicycle });
-  };
-  const removerItem = (bicycleIndex) => {
-    const bicycle = {
-      [bicycleIndex]: Number(bicycleSelecionada[bicycleIndex] || 0) - 1,
-    };
-    
-    setBicycleSelecionada({ ...bicycleSelecionada, ...bicycle });
-  };
-
-  const removeButton = (canRender, index) =>
-	Boolean(canRender) && (<button className="Acoes_remover" onClick={()=> removerItem(index)}>Remover</button>);
-
   return (
     <div className="BicycleLista">
       {bicycles.map((bicycle, index) => (
-        <div className="BicycleListaItem" key={`BicycleLista-${index}`}>
-          {badgeCounter(bicycleSelecionada[index], index)}
-          <div>
-            <div className="BicycleListaItemBrand">{bicycle.brand}</div>
-            <div className="BicycleListaItemColor">{bicycle.color}</div>
-            <div className="BicycleListaItemGears">{bicycle.gears}</div>
-            <div className="BicycleListaItemModel">{bicycle.model}</div>
-            <div className="BicycleListaItemPrice">{`R$ ${bicycle.price}`}</div>
-            <div>
-              <img
-                className="BicycleListaItemImage"
-                src={bicycle.image}
-                alt={`Bicicleta da marca ${bicycle.brand} com o valor de ${bicycle.price} reais, do modelo ${bicycle.model}. `}
-              />
-            </div>
-            <div className="BicycleListaItemAcoes Acoes">
-              <button
-                className={`Acoes_adicionar ${!bicycleSelecionada[index] && "Acoes_preencher"}`}
-                onClick={() => adicionarItem(index)}
-              >
-                Adicionar ao carrinho
-              </button>
-              {removeButton(bicycleSelecionada[index], index)}
-            </div>
-          </div>
-        </div>
+        <BicycleListaItem
+          key={`BicycleListaItem-${index}`}
+          bicycleSelecionada={bicycleSelecionada}
+          bicycle={bicycle}
+          index={index}
+          setBicycleSelecionada={setBicycleSelecionada}
+        ></BicycleListaItem>
       ))}
     </div>
   );
