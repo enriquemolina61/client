@@ -5,6 +5,7 @@ function BicycleListaItem({
   bicycle,
   index,
   setBicycleSelecionada,
+  handleOpenModal,
 }) {
   const removerItem = (i) => {
     const bicycle = {
@@ -42,11 +43,20 @@ function BicycleListaItem({
         <div className="BicycleListaItemGears">{bicycle.gears}</div>
         <div className="BicycleListaItemPrice">{`R$ ${bicycle.price}`}</div>
         <div>
-          <img
-            className="BicycleListaItemImage"
-            src={bicycle.model}
-            alt={`Bicicleta da marca ${bicycle.brand} com o valor de ${bicycle.price} reais, do modelo ${bicycle.model}. `}
-          />
+          <button
+            onClick={() => handleOpenModal(bicycle)}
+            style={{
+              backgroundColor: 'transparent',
+              cursor: 'pointer',
+              border: 'none',
+            }}
+          >
+            <img
+              className="BicycleListaItemImage"
+              src={bicycle.model}
+              alt={`Bicicleta da marca ${bicycle.brand} com o valor de ${bicycle.price} reais, do modelo ${bicycle.model}. `}
+            />
+          </button>
         </div>
         <div className="BicycleListaItemAcoes Acoes">
           <button

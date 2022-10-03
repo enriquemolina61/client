@@ -7,7 +7,6 @@ export const ModalCreate = ({
   contentLabel,
   isCreating,
   handleCreateModal,
-  handleCreateConfirm,
   setLoading,
 }) => {
   async function handleSubmit(event) {
@@ -54,7 +53,7 @@ export const ModalCreate = ({
         <button type="form" form="formcreate" className={'create-modal'}>
           Criar
         </button>
-        <button onClick={handleCreateModal} version={'cancel-modal'} >
+        <button onClick={handleCreateModal} version={'cancel-modal'}>
           Cancel
         </button>
       </div>

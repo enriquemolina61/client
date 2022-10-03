@@ -1,0 +1,12 @@
+.image-card{
+    width: 30rem;
+}
+.subtitle{
+    color: white;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    color: white
+
+}

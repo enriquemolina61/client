@@ -18,6 +18,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     width: 340px;
     height: 50px;
+    z-index: 1;
   }
   
   .Logo__titulo {
@@ -26,6 +27,7 @@
     font-family: "Exo";
     font-weight: 700;
     font-size: 2.5em;
+    z-index: 1;
   }
   
   .Logo__icone {

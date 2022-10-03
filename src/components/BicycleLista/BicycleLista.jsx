@@ -4,7 +4,7 @@ import { Api } from '../../api/api';
 import './BicycleLista.css';
 import BicycleListaItem from 'components/BicycleListaItem/BicycleListaItem';
 
-export function BicycleLista({ loading, setLoading }) {
+export function BicycleLista({ loading, setLoading, handleOpenModal }) {
   const [bicycleSelecionada, setBicycleSelecionada] = useState({});
   const [bicycles, setBicycles] = useState([]);
 
@@ -33,6 +33,7 @@ export function BicycleLista({ loading, setLoading }) {
           bicycle={bicycle}
           index={index}
           setBicycleSelecionada={setBicycleSelecionada}
+          handleOpenModal={handleOpenModal}
         ></BicycleListaItem>
       ))}
     </div>
