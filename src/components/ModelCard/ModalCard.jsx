@@ -31,7 +31,11 @@ export const ModalCard = ({
       <img src={bicycleSelecionada.model} alt="" className="image-card" />
 
       <div className="buttons-container">
-        <button onClick={handleOpenModal} version={'cancel-modal'}>
+        <button
+          className="close-bicycle"
+          onClick={handleOpenModal}
+          version={'cancel-modal'}
+        >
           <AiOutlineClose size={30} />
         </button>
       </div>

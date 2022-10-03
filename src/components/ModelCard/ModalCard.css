@@ -10,3 +10,12 @@
     color: white
 
 }
+.close-bicycle{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
