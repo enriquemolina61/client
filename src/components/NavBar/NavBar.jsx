@@ -1,8 +1,9 @@
 import './NavBar.css';
 import carrinho from 'assets/icons/carrinho.png';
 import logo from 'assets/logo.png';
+import { AiOutlinePlus } from 'react-icons/ai';
 
-function NavBar() {
+function NavBar({ handleCreateModal }) {
   return (
     <div className="Home__header Header">
       <div className="row">
@@ -23,6 +24,11 @@ function NavBar() {
               className="Carrinho__icone"
               alt="Carrinho de Compras"
             />
+          </div>
+          <div className="Opcoes__Create">
+            <button onClick={handleCreateModal}>
+              <AiOutlinePlus size={30} />
+            </button>
           </div>
         </div>
       </div>
