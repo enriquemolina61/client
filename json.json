@@ -1,0 +1,85 @@
+[{
+    "_id": {
+      "$oid": "6334511e756df43f5b2049c8"
+    },
+    "color": "Blue",
+    "gears": 20,
+    "brand": "Caloi",
+    "model": "Trial",
+    "price": 1500,
+    "created_at": {
+      "$date": {
+        "$numberLong": "1664373022666"
+      }
+    },
+    "uptated_at": {
+      "$date": {
+        "$numberLong": "1664373022666"
+      }
+    },
+    "sold": false,
+    "img": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-racing-bicycle-shimano-mountain-bike-ultegra-haibike-2-18-aff-5b6d2d634eff44.4947011715338816993236.png?raw=true"
+  },{
+    "_id": {
+      "$oid": "63345193756df43f5b2049c9"
+    },
+    "color": "Blue",
+    "gears": 200,
+    "brand": "Flavio",
+    "model": "Alvarenga",
+    "price": 150000,
+    "created_at": {
+      "$date": {
+        "$numberLong": "1664373139543"
+      }
+    },
+    "uptated_at": {
+      "$date": {
+        "$numberLong": "1664373139543"
+      }
+    },
+    "sold": true,
+    "img": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-specialized-stumpjumper-specialized-rockhopper-mou-bicycle-cranks-5b1d9f55a99ff3.4022329915286679896948.png?raw=true"
+  },{
+    "_id": {
+      "$oid": "633b071ac3393e258665b32c"
+    },
+    "color": "Blue",
+    "gears": 200,
+    "brand": "Flavio",
+    "model": "Alvarenga",
+    "price": 150000,
+    "created_at": {
+      "$date": {
+        "$numberLong": "1664812826224"
+      }
+    },
+    "uptated_at": {
+      "$date": {
+        "$numberLong": "1664812826224"
+      }
+    },
+    "sold": false,
+    "img": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-bicycle-pedals-bicycle-frames-bicycle-wheels-mount-son-lux-5b1fc9d25125b9.1789570415288099383324.png?raw=true"
+  },{
+    "_id": {
+      "$oid": "633b0737c3393e258665b32d"
+    },
+    "color": "Red",
+    "gears": 20,
+    "brand": "Molina ",
+    "model": "Trial",
+    "price": 15000,
+    "created_at": {
+      "$date": {
+        "$numberLong": "1664812855364"
+      }
+    },
+    "uptated_at": {
+      "$date": {
+        "$numberLong": "1664812855364"
+      }
+    },
+    "sold": false,
+    "img": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-specialized-stumpjumper-specialized-rockhopper-mou-bicycle-cranks-5b1d9f55a99ff3.4022329915286679896948.png?raw=true"
+  }]

@@ -7,7 +7,7 @@ export const bicycles = [
     price: 25000,
     carrinho: false,
     sold: false,
-    image: require('../assets/images/1-Pinarello.jpg'),
+    image: 'https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-racing-bicycle-shimano-mountain-bike-ultegra-haibike-2-18-aff-5b6d2d634eff44.4947011715338816993236.png?raw=true'
   },
   {
     color: 'White',
@@ -17,7 +17,7 @@ export const bicycles = [
     price: 15000,
     carrinho: false,
     sold: false,
-    image: require('../assets/images/2-Eddy-Merckx.jpg'),
+    image: 'https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-trek-bicycle-corporation-cycling-giant-bicycles-mo-kross-5b22f48f9e3e62.0938133015290174876482.png?raw=true',
   },
   {
     color: 'Black',
