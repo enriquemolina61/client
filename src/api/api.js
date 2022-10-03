@@ -11,10 +11,11 @@ export class Api {
     return bicycles;
   }
 
-  static async createBicycle() {
+  static async createBicycle(newbike) {
     const response = await fetch(defaultUrl, {
       method: 'POST',
       headers: new Headers({ 'Content-Type': 'application/json' }),
+      body: JSON.stringify(newbike),
     });
     const bicycle = await response.json();
     return bicycle;
