@@ -26,7 +26,14 @@ function NavBar({ handleCreateModal }) {
             />
           </div>
           <div className="Opcoes__Create">
-            <button onClick={handleCreateModal}>
+            <button
+              onClick={handleCreateModal}
+              style={{
+                backgroundColor: 'transparent',
+                cursor: 'pointer',
+                border: 'none',
+              }}
+            >
               <AiOutlinePlus size={30} />
             </button>
           </div>

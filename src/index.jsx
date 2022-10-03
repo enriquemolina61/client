@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { Home } from './views/Home/Home';
 import 'assets/styles/main.css';
+import Modal from 'react-modal';
 
 ReactDom.render(
   <React.StrictMode>
@@ -9,3 +10,4 @@ ReactDom.render(
   </React.StrictMode>,
   document.getElementById('root'),
 );
+Modal.setAppElement('#root');

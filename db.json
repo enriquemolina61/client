@@ -145,211 +145,31 @@
       "id": 16
     },
     {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
+      "color": "red",
+      "gears": 354,
+      "brand": "Uff",
+      "model": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
+      "price": 20000,
       "sold": false,
       "id": 17
     },
     {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
+      "color": "red",
+      "gears": 354,
+      "brand": "Uff",
+      "model": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
+      "price": 20000,
       "sold": false,
       "id": 18
     },
     {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
+      "color": "blue",
+      "gears": 354,
+      "brand": "sdfsdf",
+      "model": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
+      "price": 15000,
       "sold": false,
       "id": 19
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 20
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 21
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 22
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 23
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 24
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 25
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 26
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 27
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 28
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 29
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 30
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 31
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 32
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 33
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 34
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 35
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 36
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 37
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 38
-    },
-    {
-      "color": "Blue",
-      "gears": 200,
-      "brand": "Flavio",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-mountain-bike-bicycle-forks-mongoose-cycling-nakamura-pristine-junior-24-mountain-bike-2017-5b666a4c8db382.8280157215334385405804.png?raw=true",
-      "price": 150000,
-      "sold": false,
-      "id": 39
     }
   ]
 }

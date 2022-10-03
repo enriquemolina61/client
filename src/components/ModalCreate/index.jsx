@@ -1,6 +1,6 @@
 import './ModalCreate.css';
 import Modal from 'react-modal';
-
+import { Api } from 'api/api';
 export const ModalCreate = ({
   onRequestClose,
   style,
@@ -8,7 +8,24 @@ export const ModalCreate = ({
   isCreating,
   handleCreateModal,
   handleCreateConfirm,
+  setLoading,
 }) => {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const newbicycle = {
+      color: event.target.color.value,
+      gears: +event.target.marcha.value,
+      brand: event.target.marca.value,
+      model: event.target.imagem.value,
+      price: +event.target.preco.value,
+      sold: false,
+    };
+    console.log(newbicycle);
+    Api.createBicycle(newbicycle);
+    setLoading(true);
+    handleCreateModal();
+  }
+
   return (
     <Modal
       isOpen={isCreating}
@@ -20,27 +37,24 @@ export const ModalCreate = ({
     >
       <h2 className="subtitle"> Create New Bicycle </h2>
       <div>
-        <form action="">
-          <label htmlFor="">Cor</label>
-          <input type="text" name="" id="" />
-          <label htmlFor="">Marchas</label>
-          <input type="text" name="" id="" />
-          <label htmlFor="">Marca</label>
-          <input type="text" name="" id="" />
-          <label htmlFor="">Imagem</label>
-          <input type="text" name="" id="" />
-          <label htmlFor="">Preço</label>
-          <input type="text" name="" id="" />
+        <form action="" onSubmit={handleSubmit} id="formcreate">
+          <label htmlFor="color">color</label>
+          <input type="text" name="color" id="color" />
+          <label htmlFor="Marchas">Marchas</label>
+          <input type="text" name="marcha" id="marcha" />
+          <label htmlFor="Marca">Marca</label>
+          <input type="text" name="marca" id="marca" />
+          <label htmlFor="Imagem">Imagem</label>
+          <input type="text" name="imagem" id="imagem" />
+          <label htmlFor="Preço">Preço</label>
+          <input type="number" name="preco" id="preco" />
         </form>
       </div>
       <div className="buttons-container">
-        <button
-          onClick={() => handleCreateConfirm()}
-          className={'create-modal'}
-        >
-          Yes
+        <button type="form" form="formcreate" className={'create-modal'}>
+          Criar
         </button>
-        <button onClick={handleCreateModal} version={'cancel-modal'}>
+        <button onClick={handleCreateModal} version={'cancel-modal'} >
           Cancel
         </button>
       </div>

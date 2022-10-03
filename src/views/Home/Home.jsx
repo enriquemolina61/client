@@ -6,6 +6,7 @@ import { ModalCreate } from 'components/ModalCreate';
 
 export function Home() {
   const [isCreating, setIsCreating] = useState(false);
+  const [loading, setLoading] = useState(true);
   const handleIsCreating = () => {
     setIsCreating(!isCreating);
   };
@@ -17,13 +18,14 @@ export function Home() {
     <div className="Home">
       <NavBar handleCreateModal={handleIsCreating} />
       <div className="Home_container">
-        <BicycleLista />
+        <BicycleLista loading={loading} setLoading={setLoading} />
         <ModalCreate
           onRequestClose={handleIsCreating}
           contentLabel="Criando a bicicleta"
           isCreating={isCreating}
           handleCreateModal={handleIsCreating}
           handleCreateConfirm={handleCreateConfirm}
+          setLoading={setLoading}
         />
       </div>
     </div>
