@@ -34,6 +34,10 @@ function BicycleListaItem({
         Remover
       </button>
     );
+  const formatter = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  });
   return (
     <div className="BicycleListaItem">
       {badgeCounter(bicycleSelecionada[index], index)}
@@ -41,7 +45,9 @@ function BicycleListaItem({
         <div className="BicycleListaItemBrand">{bicycle.brand}</div>
         <div className="BicycleListaItemColor">{bicycle.color}</div>
         <div className="BicycleListaItemGears">{bicycle.gears}</div>
-        <div className="BicycleListaItemPrice">{`R$ ${bicycle.price}`}</div>
+        <div className="BicycleListaItemPrice">
+          {formatter.format(bicycle.price)}
+        </div>
         <div>
           <button
             onClick={() => handleOpenModal(bicycle)}

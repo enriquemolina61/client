@@ -11,6 +11,11 @@ export const ModalCard = ({
   style,
   bicycleSelecionada,
 }) => {
+  const formatter = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  });
+
   return (
     <Modal
       isOpen={isCardOpen}
@@ -25,7 +30,7 @@ export const ModalCard = ({
         <span>Marca: {bicycleSelecionada.brand}</span>
         <span>Cor: {bicycleSelecionada.color}</span>
         <span>Marchas: {bicycleSelecionada.gears}</span>
-        <span>R$ {bicycleSelecionada.price}</span>
+        <span> {formatter.format(bicycleSelecionada.price)}</span>
       </div>
 
       <img src={bicycleSelecionada.model} alt="" className="image-card" />

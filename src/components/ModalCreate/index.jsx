@@ -34,7 +34,7 @@ export const ModalCreate = ({
     setLoading(true);
     handleCreateModal();
   }
-
+  
   return (
     <Modal
       isOpen={isCreating}
