@@ -19,6 +19,14 @@ export const ModalCreate = ({
       price: +event.target.preco.value,
       sold: false,
     };
+    if (
+      !newbicycle.color.trim() ||
+      !newbicycle.gears.trim() ||
+      !newbicycle.brand.trim() ||
+      !newbicycle.model.trim() ||
+      !newbicycle.price.trim()
+    )
+      return;
     console.log(newbicycle);
     Api.createBicycle(newbicycle);
     setLoading(true);
@@ -34,28 +42,40 @@ export const ModalCreate = ({
       shouldCloseOnOverlayClick={false}
       shouldCloseOnEsc={false}
     >
-      <h2 className="subtitle"> Create New Bicycle </h2>
-      <div>
-        <form action="" onSubmit={handleSubmit} id="formcreate">
-          <label htmlFor="color">color</label>
-          <input type="text" name="color" id="color" />
-          <label htmlFor="Marchas">Marchas</label>
-          <input type="text" name="marcha" id="marcha" />
-          <label htmlFor="Marca">Marca</label>
-          <input type="text" name="marca" id="marca" />
-          <label htmlFor="Imagem">Imagem</label>
-          <input type="text" name="imagem" id="imagem" />
-          <label htmlFor="Preço">Preço</label>
-          <input type="number" name="preco" id="preco" />
-        </form>
-      </div>
-      <div className="buttons-container">
-        <button type="form" form="formcreate" className={'create-modal'}>
-          Criar
-        </button>
-        <button onClick={handleCreateModal} version={'cancel-modal'}>
-          Cancel
-        </button>
+      <div className="modal-container">
+        <h2 className="subtitle"> Create New Bicycle </h2>
+        <div className="form-create">
+          <form action="" onSubmit={handleSubmit} id="formcreate">
+            <div className="cards-stats">
+              <span>Cor </span>
+              <input type="text" name="color" id="color" />
+            </div>
+            <div className="cards-stats">
+              <label htmlFor="Marchas">Marchas </label>
+              <input type="number" name="marcha" id="marcha" />
+            </div>
+            <div className="cards-stats">
+              <label htmlFor="Marca">Marca </label>
+              <input type="text" name="marca" id="marca" />
+            </div>
+            <div className="cards-stats">
+              <label htmlFor="Imagem">Imagem </label>
+              <input type="text" name="imagem" id="imagem" />
+            </div>
+            <div className="cards-stats">
+              <label htmlFor="Preço">Preço </label>
+              <input type="number" name="preco" id="preco" />
+            </div>
+          </form>
+        </div>
+        <div className="buttons-container">
+          <button type="form" form="formcreate" className={'create-modal'}>
+            Criar
+          </button>
+          <button onClick={handleCreateModal} version={'cancel-modal'}>
+            Sair
+          </button>
+        </div>
       </div>
     </Modal>
   );
