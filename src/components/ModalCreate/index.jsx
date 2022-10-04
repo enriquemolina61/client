@@ -21,13 +21,15 @@ export const ModalCreate = ({
     };
     if (
       !newbicycle.color.trim() ||
-      !newbicycle.gears.trim() ||
+      !newbicycle.gears > 0 ||
       !newbicycle.brand.trim() ||
       !newbicycle.model.trim() ||
-      !newbicycle.price.trim()
-    )
+      !newbicycle.price > 0
+    ) {
+      console.log(newbicycle);
       return;
-    console.log(newbicycle);
+    }
+
     Api.createBicycle(newbicycle);
     setLoading(true);
     handleCreateModal();

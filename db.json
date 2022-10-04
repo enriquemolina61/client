@@ -8,7 +8,33 @@
       "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-racing-bicycle-shimano-mountain-bike-ultegra-haibike-2-18-aff-5b6d2d634eff44.4947011715338816993236.png?raw=true",
       "price": 1500,
       "sold": false
+    },
+    {
+      "color": "Cinza",
+      "gears": 15,
+      "brand": "Trek",
+      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-trek-bicycle-corporation-cycling-giant-bicycles-mo-kross-5b22f48f9e3e62.0938133015290174876482.png?raw=true",
+      "price": 5000,
+      "sold": false,
+      "id": 2
+    },
+    {
+      "color": "Laranja",
+      "gears": 15,
+      "brand": "Scott",
+      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-trek-bicycle-corporation-mountain-bike-cycling-bic-crofton-bike-doctor-5b253413a86ea2.2059842715291648196899.png?raw=true",
+      "price": 25000,
+      "sold": false,
+      "id": 3
+    },
+    {
+      "color": "Vermelha",
+      "gears": 13,
+      "brand": "Rodeo",
+      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-bicycle-pedals-bicycle-wheels-bicycle-frames-bicyc-5af10d1eb8ef90.5871323715257469747575.png?raw=true",
+      "price": 10000,
+      "sold": false,
+      "id": 4
     }
-    
   ]
 }
