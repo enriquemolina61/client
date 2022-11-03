@@ -20,4 +20,21 @@ export class Api {
     const bicycle = await response.json();
     return bicycle;
   }
+  static async updateBicycle(id, updBike) {
+    const response = await fetch(defaultUrl + '/' + id, {
+      method: 'PUT',
+      headers: new Headers({ 'Content-Type': 'application/json' }),
+      body: JSON.stringify(updBike),
+    });
+    const updatedTodo = await response.json();
+    return updatedTodo;
+  }
+  static async deleteBicycle(id) {
+    const response = await fetch(defaultUrl + '/' + id, {
+      method: 'DELETE',
+      headers: new Headers({ 'Content-Type': 'application/json' }),
+    });
+    const deletedBicycle = await response.json();
+    return deletedBicycle;
+  }
 }
