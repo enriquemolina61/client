@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { ModalCreate } from 'components/ModalCreate';
 import { ModalCard } from 'components/ModalCard/ModalCard';
 import { ModalUpdate } from 'components/ModalUpdate';
+import { ModalDelete } from 'components/ModalDelete/ModalDelete';
 import { ActionMode } from 'constants/index';
 
 export function Home() {
@@ -35,6 +36,14 @@ export function Home() {
     setisCardOpen(!isCardOpen);
   };
 
+  const handleActionMode = (modoNovo) => {
+    if (modoNovo === modoAtual) {
+      setModoAtual(ActionMode.NORMAL);
+      return;
+    }
+    setModoAtual(modoNovo);
+  };
+
   const handleUpdateModal = () => {
     setCardUpdating(!isCardUpdating);
   };
@@ -44,7 +53,11 @@ export function Home() {
 
   return (
     <div className="Home">
-      <NavBar handleCreateModal={handleIsCreating} />
+      <NavBar
+        handleCreateModal={handleIsCreating}
+        handleActionMode={handleActionMode}
+        modoAtual={modoAtual}
+      />
       <div className="Home_container">
         <BicycleLista
           loading={loading}
@@ -72,6 +85,14 @@ export function Home() {
           handleUpdateModal={handleUpdateModal}
           setLoading={setLoading}
           bicycleSelecionada={bicycleSelecionada}
+        />
+        <ModalDelete
+          onRequestClose={handleDeleteModal}
+          contentLabel="Deletando a bicicleta"
+          isCardOpen={isDeleting}
+          handleDeleteModal={handleDeleteModal}
+          bicycleSelecionada={bicycleSelecionada}
+          setLoading={setLoading}
         />
       </div>
     </div>

@@ -1,0 +1,26 @@
+.image-card{
+    width: 25rem;
+}
+.subtitle{
+    color: white;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    color: white
+
+}
+.close-bicycle{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+button.delete-bicycle{
+    margin: 0 auto;
+    background-color: red;
+    width: 15rem;
+}

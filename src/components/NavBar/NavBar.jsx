@@ -1,9 +1,11 @@
 import './NavBar.css';
-import carrinho from 'assets/icons/carrinho.png';
+
 import logo from 'assets/logo.png';
 import { AiOutlinePlus } from 'react-icons/ai';
-
-function NavBar({ handleCreateModal }) {
+import { MdOutlineModeEditOutline } from 'react-icons/md';
+import { ActionMode } from 'constants/index';
+import { FaRegTrashAlt } from 'react-icons/fa';
+function NavBar({ handleCreateModal, handleActionMode, modoAtual }) {
   return (
     <div className="Home__header Header">
       <div className="row">
@@ -17,17 +19,13 @@ function NavBar({ handleCreateModal }) {
           <span className="Logo__titulo"> Molina Bicycles </span>
         </div>
         <div className="Header__opcoes Opcoes">
-          <div className="Opcoes__carrinho Carrinho">
-            <img
-              src={carrinho}
-              width="40px"
-              className="Carrinho__icone"
-              alt="Carrinho de Compras"
-            />
-          </div>
           <div className="Opcoes__Create">
             <button
-              onClick={handleCreateModal}
+              onClick={
+                modoAtual === 'NORMAL'
+                  ? handleCreateModal
+                  : () => window.alert('Volte para o modo normal!')
+              }
               style={{
                 backgroundColor: 'transparent',
                 cursor: 'pointer',
@@ -35,6 +33,34 @@ function NavBar({ handleCreateModal }) {
               }}
             >
               <AiOutlinePlus size={30} />
+            </button>
+
+            <button
+              onClick={() => handleActionMode(ActionMode.ATUALIZAR)}
+              style={{
+                backgroundColor: 'transparent',
+                cursor: 'pointer',
+                border: 'none',
+              }}
+            >
+              <MdOutlineModeEditOutline
+                size={30}
+                color={modoAtual === 'ATUALIZAR' ? 'red' : 'BLACK'}
+              />
+            </button>
+
+            <button
+              onClick={() => handleActionMode(ActionMode.DELETAR)}
+              style={{
+                backgroundColor: 'transparent',
+                cursor: 'pointer',
+                border: 'none',
+              }}
+            >
+              <FaRegTrashAlt
+                size={30}
+                color={modoAtual === 'DELETAR' ? 'red' : 'BLACK'}
+              />
             </button>
           </div>
         </div>

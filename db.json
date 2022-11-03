@@ -10,7 +10,7 @@
       "sold": false
     },
     {
-      "color": "Cinz",
+      "color": "Cin",
       "gears": 15,
       "brand": "Trek",
       "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-trek-bicycle-corporation-cycling-giant-bicycles-mo-kross-5b22f48f9e3e62.0938133015290174876482.png?raw=true",
@@ -19,31 +19,13 @@
       "id": 2
     },
     {
-      "color": "Laranja",
-      "gears": 10,
-      "brand": "Scott",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-trek-bicycle-corporation-mountain-bike-cycling-bic-crofton-bike-doctor-5b253413a86ea2.2059842715291648196899.png?raw=true",
-      "price": 25000,
-      "sold": false,
-      "id": 3
-    },
-    {
-      "color": "Verme",
+      "color": "Ver",
       "gears": 13,
       "brand": "Rodeo",
       "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-bicycle-pedals-bicycle-wheels-bicycle-frames-bicyc-5af10d1eb8ef90.5871323715257469747575.png?raw=true",
       "price": 10000,
       "sold": false,
       "id": 4
-    },
-    {
-      "color": "Cinza",
-      "gears": 35,
-      "brand": "Uff",
-      "model": "https://github.com/enriquemolina61/client/blob/master/src/assets/images/kisspng-trek-bicycle-corporation-cycling-giant-bicycles-mo-kross-5b22f48f9e3e62.0938133015290174876482.png?raw=true",
-      "price": 5200,
-      "sold": false,
-      "id": 5
     },
     {
       "color": "Cin",
@@ -53,15 +35,6 @@
       "price": 5200,
       "sold": false,
       "id": 6
-    },
-    {
-      "color": "Lara",
-      "gears": 2,
-      "brand": "Trek",
-      "model": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
-      "price": 8400,
-      "sold": false,
-      "id": 7
     }
   ]
 }

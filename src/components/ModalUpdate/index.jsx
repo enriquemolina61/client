@@ -31,10 +31,10 @@ export const ModalUpdate = ({
       console.log(newbicycle);
       return;
     }
-    setLoading(true);
+    
     await Api.updateBicycle(bicycleSelecionada.id, newbicycle);
-    setLoading(false);
-    // handleUpdateModal();
+    setLoading(true);
+    handleUpdateModal();
   }
 
   return (
