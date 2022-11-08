@@ -16,7 +16,7 @@ function NavBar({ handleCreateModal, handleActionMode, modoAtual }) {
             alt="Logo Bicycle"
             className="Logo__icone"
           />
-          <span className="Logo__titulo"> Molina Bicycles </span>
+          <span className="Logo__titulo"> Molinas Bicycles </span>
         </div>
         <div className="Header__opcoes Opcoes">
           <div className="Opcoes__Create">
