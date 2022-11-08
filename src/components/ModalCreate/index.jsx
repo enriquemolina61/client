@@ -30,11 +30,11 @@ export const ModalCreate = ({
       return;
     }
 
-    Api.createBicycle(newbicycle);
+    await Api.createBicycle(newbicycle);
     setLoading(true);
     handleCreateModal();
   }
-  
+
   return (
     <Modal
       isOpen={isCreating}

@@ -1,8 +1,8 @@
-const defaultUrl = 'http://localhost:3000/bicycles';
+const defaultUrl = 'https://apibikes.herokuapp.com/bicycles';
 
 export class Api {
   static async getAllBicycle() {
-    const response = await fetch(defaultUrl, {
+    const response = await fetch(defaultUrl+'/find-all', {
       method: 'GET',
     });
     console.log(response);
@@ -12,7 +12,7 @@ export class Api {
   }
 
   static async createBicycle(newbike) {
-    const response = await fetch(defaultUrl, {
+    const response = await fetch(defaultUrl + '/create', {
       method: 'POST',
       headers: new Headers({ 'Content-Type': 'application/json' }),
       body: JSON.stringify(newbike),
@@ -21,7 +21,7 @@ export class Api {
     return bicycle;
   }
   static async updateBicycle(id, updBike) {
-    const response = await fetch(defaultUrl + '/' + id, {
+    const response = await fetch(defaultUrl + '/update/' + id, {
       method: 'PUT',
       headers: new Headers({ 'Content-Type': 'application/json' }),
       body: JSON.stringify(updBike),
@@ -30,7 +30,7 @@ export class Api {
     return updatedTodo;
   }
   static async deleteBicycle(id) {
-    const response = await fetch(defaultUrl + '/' + id, {
+    const response = await fetch(defaultUrl + '/delete/' + id, {
       method: 'DELETE',
       headers: new Headers({ 'Content-Type': 'application/json' }),
     });
